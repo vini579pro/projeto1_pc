@@ -6,8 +6,8 @@ import locale
 
 locale.setlocale(locale.LC_ALL, "pt_br.UTF-8")
 #entradas
-capital= float(input("capital_inicial: "))
-aporte= float(INPUT("aporte mensal: "))
+capital= float(input("capital inicial: "))
+aporte= float(input("aporte inicial: "))
 meses= int(input("prazo(meses): "))
 cdi_anual= float(input("cdi anual (%)"))/100
 perc_cdb= float(input("percentual do cdi (%)"))/100
@@ -35,7 +35,7 @@ montante_lci= (capital * math.pow((1 + taxa_lci), meses) + (aporte * meses))
 taxa_poupanca= 0.005
 montante_poupanca= (capital * math.pow((1 + taxa_poupanca), meses) + (aporte * meses))
 
-#fil - simulações 
+#FII - simulações 
 
 montante = (capital * math.pow((1 + taxa_FII), meses) + (aporte * meses))
 
