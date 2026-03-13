@@ -7,12 +7,12 @@ import locale
 locale.setlocale(locale.LC_ALL, "pt_br.UTF-8")
 #entradas
 capital= float(input("capital_inicial: "))
-aporte= float("aporte mensal: ")
+aporte= float(INPUT("aporte mensal: "))
 meses= int(input("prazo(meses): "))
 cdi_anual= float(input("cdi anual (%)"))/100
 perc_cdb= float(input("percentual do cdi (%)"))/100
 perc_lci= float(input("percentual do cdb (%)"))/100
-taxa_fil= float(input("rentabilidade mensal fil (%)"))/100
+taxa_FII= float(input("rentabilidade mensal fil (%)"))/100
 meta= float(input("meta finaceira (R$)"))
 
 #conversão CDI
